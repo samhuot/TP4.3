@@ -254,6 +254,7 @@ void Etat(fac &fac)
 		facFic.read((char *)&un.quantite, sizeof(un.quantite));
 		facFic.read((char *)&un.prix, sizeof(un.prix));
 		facFic.read((char *)&un.montant, sizeof(un.montant));
+
 		if (!facFic.eof())
 		{
 			total = total + un.montant;
